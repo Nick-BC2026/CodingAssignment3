@@ -1,0 +1,122 @@
+body {
+    background-image: url('../images/background.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.5); 
+    background-blend-mode: overlay;
+    font-family: Verdana, sans-serif;
+    margin: 0;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: -1;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 40px;       
+    margin-bottom: 30px;
+    align-items: stretch; 
+    justify-content: center;
+}
+
+.box1, .box2, .box3, .box4 {
+    flex: 1 1 300px; 
+    padding: 10px;
+    border: none;
+    background: none; 
+    text-align: center;
+}
+
+.box2, .box3, .box4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.conversion-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+h1 {
+    font-size: 3.5em;
+    color: #cc8400;
+    margin: 10px 0;
+}
+
+h3 {
+    font-size: 1.5em;
+    color: #cc8400;
+    border-bottom: 1px solid #cc8400;
+    padding-bottom: 5px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+ul, ol {
+    display: inline-block;
+    text-align: left;
+    font-size: 1.2em;
+}
+
+p, li, label, legend, figcaption, span {
+    color: #ffffff;
+    line-height: 1.6;
+    margin: 5px 0;
+    font-size: 1.2em;
+}
+
+input {
+    width: 60px;
+    padding: 5px;
+    color: #000;
+}
+
+figure {
+    color: #ffffff;
+}
+
+img {
+    width: 50%;      
+    height: auto;     
+    border-radius: 4px;
+    display: block;
+    margin: 0 auto;
+}
+
+fieldset {
+    border: 1px solid #cc8400;
+    padding: 15px;
+    margin-top: 15px;
+    display: inline-block;
+    font-size: 1.1em;
+    color: #ffffff;
+}
+
+.footer-box {
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-text {
+    color: #cc8400;
+    margin: 0;
+    font-size: 1em;
+}
